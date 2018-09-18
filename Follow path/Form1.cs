@@ -16,5 +16,10 @@ namespace Follow_path
         {
             InitializeComponent();
         }
+
+        private void image_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
