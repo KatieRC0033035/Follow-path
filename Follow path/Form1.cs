@@ -21,5 +21,29 @@ namespace Follow_path
         {
 
         }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X + 4, image.Location.Y);
+                await Task.Delay(50);
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X, image.Location.Y + 4);
+                await Task.Delay(50);
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X - 4, image.Location.Y);
+                await Task.Delay(50);
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X, image.Location.Y - 4);
+                await Task.Delay(50);
+            }
+        }
     }
 }

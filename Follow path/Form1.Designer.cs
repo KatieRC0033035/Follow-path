@@ -37,7 +37,7 @@
             // image
             // 
             this.image.Image = ((System.Drawing.Image)(resources.GetObject("image.Image")));
-            this.image.Location = new System.Drawing.Point(172, 161);
+            this.image.Location = new System.Drawing.Point(116, 81);
             this.image.Name = "image";
             this.image.Size = new System.Drawing.Size(119, 91);
             this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -53,6 +53,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
