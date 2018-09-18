@@ -45,5 +45,24 @@ namespace Follow_path
                 await Task.Delay(50);
             }
         }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X + 8, image.Location.Y);
+                await Task.Delay(50);
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X - 4, image.Location.Y + 4);
+                await Task.Delay(50);
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                image.Location = new Point(image.Location.X - 4, image.Location.Y - 4);
+                await Task.Delay(50);
+            }
+        }
     }
 }
