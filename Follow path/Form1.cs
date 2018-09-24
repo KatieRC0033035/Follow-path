@@ -64,5 +64,21 @@ namespace Follow_path
                 await Task.Delay(50);
             }
         }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    image.Location = new Point(image.Location.X + 5, image.Location.Y);
+                    await Task.Delay(Convert.ToInt32(textBox1.Text));
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Don't be an idiot type in a number.");
+            }
+        }
     }
 }
